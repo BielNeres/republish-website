@@ -1,44 +1,27 @@
 import React from 'react'
 import { Redirect } from 'react-router-dom'
 import {Container, Div, Div2, Header, Body, Input, Button} from '../../styles'
-import {Font} from './styles'
+import HeaderClass from '../../containers/Header/index'
 
-const Login = () => {
+let Login = () => {
     return(
       <Container>
-        <Div>
-            <Div2>
-              <Header>
-              </Header>
-              <Font>
-                <h2>Preecha o cadastro da sua republica</h2>
-              </Font>
-              <Body>
-                <form action="submit" method="POST">
-                    <Input>
-                      <input type="text" placeholder="CEP"></input>
-                    </Input>
-                    <Input style={{marginTop:"10px"}}>
-                      <input type="text" placeholder="Endereço"></input>
-                    </Input>
-                    <Input style={{marginTop:"10px"}}>
-                      <input type="text" placeholder="Número"></input>
-                    </Input>
-                    <Input style={{marginTop:"10px"}}>
-                      <input type="text" placeholder="Complemento"></input>
-                    </Input>
-                    <Input style={{marginTop:"10px"}}>
-                      <input type="text" placeholder="Tipo de Imóvel"></input>
-                    </Input>
-                    <Button style={{marginTop:"30px"}}>
-                      <input onClick={Redirect} style={{backgroundColor:"green", color:"white", fontSize:"1.2rem"}}
-                      type="submit" value="CONTINUAR"></input>
-                    </Button>
-                </form>
+      <Div>
+          <Div2 style={{height:"700px"}}>
+              <HeaderClass/>
+              <Body style={{marginTop:'30px'}}>
+                  <form action="submit" method="POST">
+                      <div>   
+                          <Input type="text" placeholder="E-mail"></Input>
+                          <Input type="text"  placeholder="Senha"></Input>
+                          <Button style={{color:"white", fontSize:"1.2rem", marginTop:"80px"}}
+                          type="submit" >ENTRAR</Button>
+                      </div>
+                  </form>
               </Body>
-            </Div2>
-        </Div>
-    </Container>
+          </Div2>
+      </Div>
+  </Container>
     )
 }
 

@@ -27,15 +27,13 @@ export const Div2 = styled.div`
     flex-direction:column;
     min-width:0;
     background-clip:border-box;
-    border:1px solid rgba(0,0,0,.125);
+    // border:1px solid rgba(0,0,0,.125);
     border-radius:.25rem;
 `;
 
 export const Header = styled.div`
     padding:.75rem 1.25rem;
     margin-bottom:0;
-    background-color:rgba(0,0,0,.03);
-    border-bottom:1px solid rgba(0,0,0,.125);
     height:25%;
 `;
 
@@ -44,12 +42,12 @@ export const Body = styled.div`
     padding: 1.25rem;
 `;
 
-export const Input = styled.div`
+export const TextArea = styled.textarea`
     display:block;
     width:80%;
     height:calc(2.00rem + 2px);
     padding: .250rem .25rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height:1.5;
     color: #495057;
     background-color: #fff;
@@ -57,21 +55,41 @@ export const Input = styled.div`
     border-radius: .50rem;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     margin-left: 8%;
+    margin-top: 10px;
 `;
 
-export const Button = styled.div`
+export const Input = styled.input`
     display:block;
-    width:40%;
+    width:80%;
     height:calc(2.00rem + 2px);
+    padding: .250rem .25rem;
+    font-size: 1.2rem;
+    line-height:1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip:padding-box;
+    border-radius: .50rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    margin-left: 8%;
+    margin-top: 10px;
+`;
+
+export const Button = styled.button`
+    cursor:pointer;
+    display:block;
+    width:50%;
+    height:calc(2.50rem + 2px);
     padding: .250rem .25rem;
     font-size: 1rem;
     line-height:1.5;
     color: #495057;
-    background-color: green;
+    background-color: rgb(0, 235, 132);
     background-clip:padding-box;
     border-radius: .50rem;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-    margin-left: 28%;
+    margin-left: 25%;
+    margin-top: 20px;
+    border-style:none;
 `;
 
 
