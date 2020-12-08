@@ -8,9 +8,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 class Register extends React.Component {
     handleClick() {
 
-        document.location.href = "/register/user/picture/perfil"     
+        document.location.href = "/register/republic/picture/perfil"     
 
     }
+
     render(){
         return (
             <Container>

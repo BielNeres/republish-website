@@ -15,26 +15,28 @@ class Register extends React.Component {
     
     handleSubmit(event) {
         event.preventDefault();
+        
 
-        api.put('Locatario/AtualiarLocatario', {
-            cdLocatario: '2',
-            nmLocatario: 'teste', 
-            cdRG: '123456789',
-            cdCPF:'75286557082',
-            dsIdade:parseInt(20),
-            dsSexo:"M",
-            dsSenha:"123456",
-            dsEmail:"aviao@aviao.com",
-            dsTelefone1:' ',
-            dsTelefone2:' ',
-            imgPerfil: `${this.fileInput.current.files[0].name}`,
-            })
-            .then(function(response){
-                document.location.href = "/register/user/description"
-            })
-            .catch(error => {
-                console.log(error)
-        });
+        document.location.href = "/register/republic/description"
+        // api.put('Locadors/AtualizarDados', {
+        //     cdLocador: 1,
+        //     nmLocador: 'teste', 
+        //     cdRG: '123456789',
+        //     cdCPF:'75286557082',
+        //     dsIdade:20,
+        //     dsSexo:"M",
+        //     dsSenha:"123456",
+        //     dsEmail:"aviao@aviao.com",
+        //     dsTelefone1:' ',
+        //     dsTelefone2:' ',
+        //     imgPerfil: `${this.fileInput.current.files[0].name}`,
+        //     })
+        //     .then(function(response){
+        //         document.location.href = "/register/republic/description"
+        //     })
+        //     .catch(error => {
+        //         console.log(error)
+        // });
     }
 
     render(){

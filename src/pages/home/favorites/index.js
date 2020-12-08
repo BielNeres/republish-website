@@ -19,7 +19,7 @@ class Home extends React.Component {
       rows.push(
                 <div style={{textAlign:"center", marginRight:"20px", borderRadius:"10%", border:"1px solid rgba(0,0,0,.125)", height:"30%", 
                 padding:"50px", boxShadow:"1px 1px 10px grey !important", cursor:"pointer", margin:"10px"}} onClick={() => this.handleClick()}>
-                <FontAwesomeIcon style={{marginBottom:"10%"}} icon={faBuilding} color="green" size="6x"/>
+                <FontAwesomeIcon style={{marginBottom:"10%"}} icon={faBuilding} color="green" size="6x" key/>
                 <p><b>Republica do Dennys</b></p>
                 <p>5 Quartos , 30 Pessoas</p>
                 <p style={{color:"green", fontWeight:"600"}}>R$ 100</p>
